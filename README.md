@@ -8,16 +8,11 @@
 
 Multi-agent workflows built with [CrewAI](https://www.crewai.com/): research and write blog posts from a topic, persist context across runs with embeddings, and rewrite informal email into professional copy.
 
-This repository is a hands-on lab rather than a hosted product. Each entry point is a small, runnable experiment that shows a different CrewAI pattern: imperative crews, YAML-configured crews, long-term memory, and a Jupyter notebook for interactive iteration.
-
-**Repository:** [github.com/kaziH436/crew-AI](https://github.com/kaziH436/crew-AI)
-
 ---
 
 ## Table of contents
 
 - [Overview](#overview)
-- [Live demos](#live-demos)
 - [Architecture](#architecture)
 - [Key design decisions](#key-design-decisions)
 - [Technologies](#technologies)
@@ -44,11 +39,6 @@ The project currently includes three workflows:
 A package stub lives in `src/crew_ai/` (`uv run crew-ai` prints a hello message). The crews above are the working examples.
 
 ---
-
-## Live demos
-
-There is no deployed web UI. The demos below are what you get when you run the project locally. Outputs are model-generated and will vary.
-
 ### Email assistant (notebook)
 
 **Input**
@@ -335,10 +325,3 @@ In `memory.py` and the notebook, pass a different LiteLLM-style model id to `LLM
 | `uv sync` / interpreter errors | Python older than 3.14 | Install 3.14+ or adjust `requires-python` if you intentionally target an older version |
 | Memory does not affect the second run | Embedder key or provider misconfigured | Check `GEMINI_API_KEY` and the `embedder` block in `memory.py` |
 
----
-
-## License
-
-No license file is included in this repository. All rights reserved unless the owner adds a license.
-
-If you use this project as a starting point, add an explicit license before sharing it as an open-source template.
