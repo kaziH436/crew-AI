@@ -325,3 +325,5 @@ In `memory.py` and the notebook, pass a different LiteLLM-style model id to `LLM
 | `uv sync` / interpreter errors | Python older than 3.14 | Install 3.14+ or adjust `requires-python` if you intentionally target an older version |
 | Memory does not affect the second run | Embedder key or provider misconfigured | Check `GEMINI_API_KEY` and the `embedder` block in `memory.py` |
 
+codebasics [CrewAI Tutorial](https://www.youtube.com/watch?v=G42J2MSKyc8&list=PLeo1K3hjS3utjalsQ32f6fYcLkWvf3-rA&index=5)
+
